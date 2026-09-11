@@ -12,43 +12,236 @@
 
 <body>
 
-    <header>
-        <h1>My First Website</h1>
+    <header class="header">
+        <div class="container nav-container">
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+            <h1 class="logo">MyWebsite</h1>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
     </header>
+
 
     <main>
 
-        <section id="home">
-            <h2>Welcome</h2>
-            <p>
-                Welcome to my first practice website created using
-                HTML, CSS and JavaScript.
-            </p>
+        <!-- HERO SECTION -->
 
-            <button onclick="showMessage()">
-                Click Me
-            </button>
+        <section id="home" class="hero">
+
+            <div class="container hero-content">
+
+                <p class="welcome-text">
+                    Welcome to my practice website
+                </p>
+
+                <h2>
+                    Learning Web Development
+                    <span>One Step at a Time</span>
+                </h2>
+
+                <p class="hero-description">
+                    This website was created using HTML, CSS and JavaScript
+                    while learning website development with VS Code and GitHub.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button onclick="scrollToSkills()">
+                        Explore My Skills
+                    </button>
+
+                    <a href="#contact" class="secondary-button">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am learning website development using VS Code and GitHub.
-            </p>
+
+        <!-- SKILLS SECTION -->
+
+        <section id="skills" class="section">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    What I Am Learning
+                </h2>
+
+                <p class="section-subtitle">
+                    These are some of the technologies I am currently practicing.
+                </p>
+
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <div class="card-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <h3>HTML</h3>
+
+                        <p>
+                            HTML is used to create the structure and content
+                            of a website.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-icon">
+                            CSS
+                        </div>
+
+                        <h3>CSS</h3>
+
+                        <p>
+                            CSS is used to design the website and control
+                            colors, spacing and layout.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-icon">
+                            JS
+                        </div>
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            JavaScript adds interactions and functionality
+                            to a website.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-icon">
+                            Git
+                        </div>
+
+                        <h3>GitHub</h3>
+
+                        <p>
+                            Git and GitHub help store, manage and publish
+                            website code.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: example@email.com</p>
+
+        <!-- ABOUT SECTION -->
+
+        <section id="about" class="section about-section">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    About This Website
+                </h2>
+
+                <div class="about-content">
+
+                    <p>
+                        I created this website as a practical project while
+                        learning web development.
+                    </p>
+
+                    <p>
+                        I am using Visual Studio Code for development,
+                        Git for version control and GitHub Pages to publish
+                        the website online.
+                    </p>
+
+                    <p>
+                        I will continue adding new features as I learn more
+                        about web development.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Contact
+                </h2>
+
+                <p class="section-subtitle">
+                    This is a sample contact section for my practice website.
+                </p>
+
+                <div class="contact-box">
+
+                    <p>
+                        Email
+                    </p>
+
+                    <h3>
+                        example@email.com
+                    </h3>
+
+                    <button onclick="showMessage()">
+                        Say Hello
+                    </button>
+
+                </div>
+
+            </div>
+
         </section>
 
     </main>
+
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 My Practice Website
+            </p>
+
+            <p>
+                Built using HTML, CSS, JavaScript and GitHub
+            </p>
+
+        </div>
+
+    </footer>
+
 
     <script src="script.js"></script>
 
